@@ -2,20 +2,20 @@
 #include<conio.h>
 int main()
 {
-   int i=0,j=0,Num=0;
+   int i=0,j=0,RC=0;
 
-   printf("\n Enter the Num:");
-   scanf("%d", &Num);
+   printf("\n Enter the Row and Colummn:");
+   scanf("%d", &RC);
 
 
 
    printf("--------------------\n");
 
-   for(i=1; i< Num ; i++)                  //For outer transversal( i th row)
+   for(i=1; i<=RC ; i++)                  //For outer transversal( i th row)
    {
-       for(j=1; j< Num; j++)               //For inner transversal(j th column)
+       for(j=1; j<=RC; j++)               //For inner transversal(j th column)
        {
-           if(j == 1  || j==Num || i==j )
+           if(j == 1  || j==RC || i==j )
            {
               printf(" * ");
            }
